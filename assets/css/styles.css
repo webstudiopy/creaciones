@@ -746,3 +746,87 @@ a { text-decoration: none; }
     width: 100%;
   }
 }
+
+
+
+
+
+
+/* AJUSTE GENERAL DEL HERO */
+.hero-section {
+  padding-top: 150px !important;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 120px !important;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 12vw, 4.8rem);
+    line-height: 1.05;
+  }
+
+  .hero-text {
+    text-align: left;
+    font-size: 1.15rem;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-buttons .btn {
+    width: 50%;
+  }
+
+  .phone-preview {
+    margin-top: 40px;
+  }
+}
+
+/* NAVBAR MOBILE CORREGIDO */
+@media (max-width: 991px) {
+  .navbar-custom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-toggler {
+    display: block !important;
+    border: 1px solid rgba(139, 92, 246, .25);
+    border-radius: 12px;
+    padding: 7px 10px;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    margin-top: 14px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(88, 52, 166, .14);
+  }
+
+  .navbar-nav {
+    text-align: center;
+    gap: 10px;
+  }
+
+  .btn-success-soft {
+    width: 100%;
+  }
+}
+
+/* FORZAR ÍCONO HAMBURGUESA */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(20,18,37,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
