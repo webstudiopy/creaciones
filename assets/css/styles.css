@@ -703,3 +703,46 @@ a { text-decoration: none; }
   background: #f4efff !important;
   color: var(--lila-dark) !important;
 }
+
+
+@media (max-width: 991px) {
+  .navbar-custom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+  }
+
+  .navbar-toggler {
+    border: 1px solid rgba(139, 92, 246, .25);
+    border-radius: 12px;
+    padding: 7px 10px;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    margin-top: 14px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(88, 52, 166, .14);
+  }
+
+  .navbar-nav {
+    gap: 10px;
+    text-align: center;
+  }
+
+  .btn-success-soft {
+    display: block;
+    width: 100%;
+  }
+}
